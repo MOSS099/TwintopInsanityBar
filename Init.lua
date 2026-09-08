@@ -96,6 +96,7 @@ TRB.Data.maxResource = {
 	},
 	mage = {
 		arcane = { arcaneSalvo = 25 },
+		frost = { shatter = 20 },
 	},
 	monk = {
 		brewmaster = { energy = 100 },

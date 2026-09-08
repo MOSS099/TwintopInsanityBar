@@ -12,7 +12,7 @@ local content = [====[
 
 ---
 
-# 12.1.0.10-release (2026-09-08)
+# 12.1.0.10-release (2026-09-09)
 ## Druid
 
 - Fix Combo Point audio cues never firing outside the Feral specialization. They are configured on Feral's Audio Cues tab and apply to all specializations.
@@ -21,6 +21,11 @@ local content = [====[
 ### Arcane
 
 - [#833](#833) Ensure that Arcane Salvo's maximum stack count is 20 when Spellfire Salvo is not talented.
+
+### Frost
+
+- [#834](#834) Change Shatter color at Ice Lance stacks now marks 6, 12, and 18 when Polished Focus is talented.
+- [#834](#834) Add two Shatter custom indicators, each recoloring a single stack of your choosing and set to Disabled, Spellslinger Only, Frostfire Only, or Enabled. The first defaults to stack 12 for Frostfire.
 
 ## Priest
 ### Shadow

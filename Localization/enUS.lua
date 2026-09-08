@@ -3256,7 +3256,6 @@ L["CooldownManagerGracePeriod"] = "Hidden Viewer Grace Period (seconds)"
 
 -- Frost Mage Shatter threshold now recolors every multiple of the threshold stack
 L["MageFrostCheckboxShatterThresholdMultiples"] = "Change Shatter color at Ice Lance stacks"
-L["MageFrostCheckboxShatterThresholdMultiplesTooltip"] = "Changes the Shatter fill color at every multiple of the maximum consumption of stacks by Ice Lance (5, 10, 15, 20)."
 
 -- Game version gate (addon build does not match the game client it is running on)
 L["VersionGateMismatchPopupText"] = "|cFFFF0000Twintop's Resource Bar did not load.|r\n\nThis is the |cFFFFFFFF%s|r build, which targets World of Warcraft |cFFFFFFFF%s|r, but you are playing on |cFFFFFFFF%s|r.\n\nPlease install the build of Twintop's Resource Bar that matches this game client."
@@ -3628,3 +3627,12 @@ L["PriestShadowIndicatorResonantEnergyTooltip"] = "Changes to this color when Re
 L["PriestShadowIndicatorResonantEnergyColor"] = "Resonant Energy is active"
 L["PriestShadowHeaderResonantEnergyConfiguration"] = "Resonant Energy Configuration"
 L["PriestShadowResonantEnergyStacks"] = "Minimum Resonant Energy Stacks"
+
+-- Frost Mage Shatter custom indicators
+L["MageFrostCheckboxShatterThresholdMultiplesTooltip"] = "Changes the Shatter fill color at every multiple of the stacks Ice Lance consumes: 5, 10, 15, and 20; or 6, 12, and 18 with Polished Focus."
+L["MageFrostHeaderShatterCustomIndicators"] = "Shatter Custom Indicators"
+L["MageFrostShatterCustomIndicatorColor"] = "Custom Indicator %d Color"
+L["MageFrostShatterCustomIndicatorStacks"] = "Custom Indicator %d Stacks"
+L["MageFrostShatterCustomIndicatorModeSpellslinger"] = "Spellslinger Only"
+L["MageFrostShatterCustomIndicatorModeFrostfire"] = "Frostfire Only"
+L["MageFrostShatterCustomIndicatorNote"] = "Each custom indicator recolors the single Shatter stack set below, overriding the Ice Lance stack color on it. Spellslinger Only and Frostfire Only apply only while that hero talent tree is active."
