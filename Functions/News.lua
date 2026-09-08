@@ -13,6 +13,10 @@ local content = [====[
 ---
 
 # 12.1.0.10-release (2026-09-05)
+## Druid
+
+- Fix Combo Point audio cues never firing outside the Feral specialization. They are configured on Feral's Audio Cues tab and apply to all specializations.
+
 ## Priest
 ### Shadow
 
