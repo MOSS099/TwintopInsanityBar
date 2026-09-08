@@ -7,6 +7,7 @@ TRB.Classes.Mage = TRB.Classes.Mage or {}
 ---@class TRB.Classes.Mage.ArcaneSpells : TRB.Classes.SpecializationSpellsBase
 ---@field arcaneSurge TRB.Classes.SpellBase
 ---@field arcaneSalvo TRB.Classes.SpellBase
+---@field spellfireSalvo TRB.Classes.SpellBase
 TRB.Classes.Mage.ArcaneSpells = setmetatable({}, {__index = TRB.Classes.SpecializationSpellsBase})
 TRB.Classes.Mage.ArcaneSpells.__index = TRB.Classes.Mage.ArcaneSpells
 
@@ -31,7 +32,12 @@ function TRB.Classes.Mage.ArcaneSpells:New()
         id = 44425,
         talentId = 384452,
         isTalent = true,
-        maxStacks = TRB.Data.maxResource.mage.arcane.arcaneSalvo
+        maxStacks = 20
+    })
+    self.spellfireSalvo = TRB.Classes.SpellBase:New({
+        id = 1260616,
+        isTalent = true,
+        maxStacksMod = 5
     })
 
     return self

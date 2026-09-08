@@ -12,10 +12,15 @@ local content = [====[
 
 ---
 
-# 12.1.0.10-release (2026-09-05)
+# 12.1.0.10-release (2026-09-08)
 ## Druid
 
 - Fix Combo Point audio cues never firing outside the Feral specialization. They are configured on Feral's Audio Cues tab and apply to all specializations.
+
+## Mage
+### Arcane
+
+- [#833](#833) Ensure that Arcane Salvo's maximum stack count is 20 when Spellfire Salvo is not talented.
 
 ## Priest
 ### Shadow

@@ -572,7 +572,7 @@ local function RefreshLookupData_Arcane()
 
 	-- Block D: Arcane Salvo ($arcaneSalvoStacks, $arcaneSalvoStacksMax)
 	if not activeVars or activeVars["$arcaneSalvoStacks"] or activeVars["$arcaneSalvoStacksMax"] then
-		local _arcaneSalvoStacksMax = spells.arcaneSalvo.maxStacks
+		local _arcaneSalvoStacksMax = TRB.Data.character.arcaneSalvoMaxStacks or spells.arcaneSalvo.maxStacks
 
 		lookupLogic["$arcaneSalvoStacksMax"] = _arcaneSalvoStacksMax
 
@@ -1150,7 +1150,7 @@ local function UpdateArcaneSalvo(specSettings, specCacheSettings, barColors, fil
 		return
 	end
 
-	local maxStacks = spells.arcaneSalvo.maxStacks
+	local maxStacks = TRB.Data.character.arcaneSalvoMaxStacks or spells.arcaneSalvo.maxStacks
 	if arcaneSalvoAppliedMax ~= maxStacks then
 		node:SetMinMax(0, maxStacks)
 		arcaneSalvoAppliedMax = maxStacks
@@ -2029,6 +2029,13 @@ function TRB.Functions.Class:CheckCharacter()
 
 		local arcaneTalents = TRB.Data.specCache.mage_arcane and TRB.Data.specCache.mage_arcane.talents
 		TRB.Data.character.arcaneSalvoTalented = arcaneTalents ~= nil and arcaneTalents:IsTalentActive(spells.arcaneSalvo) == true
+
+		-- Spellfire Salvo raises the stack cap above Arcane Salvo's base.
+		local arcaneSalvoMaxStacks = spells.arcaneSalvo.maxStacks or 20
+		if arcaneTalents ~= nil and arcaneTalents:IsTalentActive(spells.spellfireSalvo) then
+			arcaneSalvoMaxStacks = arcaneSalvoMaxStacks + (spells.spellfireSalvo.attributes.maxStacksMod or 5)
+		end
+		TRB.Data.character.arcaneSalvoMaxStacks = arcaneSalvoMaxStacks
 
 		if sharedSettings ~= nil then
 			if maxComboPoints ~= TRB.Data.character.maxResource2 then
