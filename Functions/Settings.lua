@@ -10765,12 +10765,18 @@ function TRB.Functions.Settings:DefaultShatterBarDimensions(classic)
 	}
 end
 
----Gets default Shatter bar colors (Frost Mage)
+---Gets default Shatter bar colors (Frost Mage), including the custom indicator stacks. Each indicator
+---recolors the single stack it names, gated by the hero talent tree its mode selects.
 ---@return table
 function TRB.Functions.Settings:DefaultShatterBarColors()
 	return {
 		bar = { color = "FFBFE3FF", color2 = "FFBFE3FF", gradientDirection = "disabled" },
 		threshold = { color = "FF000080", color2 = "FF000080", gradientDirection = "disabled", enabled = true },
+		customIndicators = {
+			-- 12: where Frostfire wants the Ice Lance, regardless of what the threshold marks say.
+			[1] = { mode = "frostfire", value = 12, color = "FF3AE85C", color2 = "FF3AE85C", gradientDirection = "disabled" },
+			[2] = { mode = "disabled", value = 6, color = "FFE8853A", color2 = "FFE8853A", gradientDirection = "disabled" },
+		},
 		border = { color = "FF12336B" },
 		background = { color = "66000000" }
 	}
