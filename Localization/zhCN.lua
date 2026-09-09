@@ -3244,7 +3244,6 @@ if locale == "zhCN" then
 	
 	-- Frost Mage Shatter threshold now recolors every multiple of the threshold stack
 	L["MageFrostCheckboxShatterThresholdMultiples"] = "冰枪术层数达到阈值时切换碎冰颜色"
-	L["MageFrostCheckboxShatterThresholdMultiplesTooltip"] = "每当达到冰枪术消耗层数的倍数时（5、10、15、20），碎冰填充条就会切换颜色。"
 	
 	-- Game version gate (addon build does not match the game client it is running on)
 	L["VersionGateMismatchPopupText"] = "|cFFFF0000Twintop资源条未能加载。|r\n\n当前为 |cFFFFFFFF%s|r 版本，适配魔兽世界 |cFFFFFFFF%s|r，但你正在游玩 |cFFFFFFFF%s|r。\n\n请安装与当前游戏客户端匹配的Twintop资源条版本。"
