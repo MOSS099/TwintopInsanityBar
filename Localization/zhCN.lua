@@ -3605,4 +3605,14 @@ if locale == "zhCN" then
 		L["BarElementBorderGlow"] = "边框发光"
 		L["GlowIndicatorNoneDefined"] = "尚未定义任何发光效果"
 		L["GlowIndicatorFixedColorSuffix"] = " |cFFFFD100(自定义颜色)|r"
+
+		-- Frost Mage Shatter custom indicators
+		L["MageFrostCheckboxShatterThresholdMultiplesTooltip"] = "在冰枪术消耗层数的每一个倍数点变更碎冰填充颜色：5、10、15、20层；若点选磨砺专注则为6、12、18层。"
+		L["MageFrostHeaderShatterCustomIndicators"] = "碎冰自定义指示器"
+		L["MageFrostShatterCustomIndicatorColor"] = "自定义指示器%d 颜色"
+		L["MageFrostShatterCustomIndicatorStacks"] = "自定义指示器%d 层数"
+		L["MageFrostShatterCustomIndicatorModeSpellslinger"] = "仅疾咒师"
+		L["MageFrostShatterCustomIndicatorModeFrostfire"] = "仅霜火"
+		L["MageFrostShatterCustomIndicatorNote"] = "每个自定义指示器会对下方设置的单个碎冰层数重新着色，覆盖该层数上冰枪术的颜色。仅疾咒师、仅霜火选项只在对应英雄天赋树激活时生效。"
+
 end
