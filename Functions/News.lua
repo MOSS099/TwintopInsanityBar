@@ -13,6 +13,12 @@ local content = [====[
 ---
 
 # 12.1.0.10-release (2026-09-09)
+## General
+### Localization
+
+- [#829 - @MOSS099](#829) Updated translations for Simplified Chinese (zhCN).
+- [#835 - @MOSS099](#835) Updated translations for Simplified Chinese (zhCN).
+
 ## Druid
 
 - Fix Combo Point audio cues never firing outside the Feral specialization. They are configured on Feral's Audio Cues tab and apply to all specializations.
